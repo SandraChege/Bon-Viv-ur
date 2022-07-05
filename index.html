@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <!--<i class="fa-solid fa-utensils fa-spin"></i>--> Fast Food Restaurant</title>
+    <link rel="stylesheet" href="css/burger.css">
+    <script src="/Js/burger.js"></script>
+    <!--FONT AWESOME ICONS LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c2761d2df3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Lobster&family=Montserrat:wght@500&family=Roboto&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--NAVIGATION BAR-->
+<nav>
+    <div class="containers">
+        <ul>
+            <li><a class="links" href="#Home">Home</a></li>
+            <li><a class="links" href="#ABOUT">About</a></li>
+            <li><a class="links" href="#Menu">Menu</a></li>
+            <li><a class="links" href="#Bookatable">Book a table</a></li>
+            <li><a class="links" href="#CONTACTUUS">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--HOME PAGE-->
+   <section id="Home">
+        <div class="welcome-bcg">
+            <img src="/photos/H1.jpg" alt="burger photo as a background image">
+                <div class="welcome-txt">
+                    BON 
+                    <div class="welcome-txt2">
+                        VIVÉUR
+                    </div>
+                </div>
+        </div>
+   </section>
+
+   <!--ABOUT SECTION-->
+   <section id="ABOUT" class="about">
+    <div>
+        <div class="about-img">
+            <!--<img src="./photos/6.jpg" alt="" height="600px" width="1270px">
+            <div class="small-txt">
+                <h3> We are Excellent !!!</h3>
+                    <p>Bon Vivéur Restaurant was founded in the early 2000's.</p>
+                    <p> 
+                        Every day, more than 15 million guests visit Bon Vivéur restaurants around the world.
+                        Founded in 1954, Burger King is the second largest fast food hamburger chain in the world.
+                        Burger King produces Hamburgers, Cheeseburgers as well as Fries, Salads, Hash Browns, Onion 
+                        Rings, Coffee, Juice, Shakes, Cookies, Pies and so much more. Burger king produces great 
+                        -tasting and affordable food.
+                    </p> --> 
+            </div>
+        </div>
+    </div>          
+   </section>
+
+   <section id="#Menu"></section>
+
+   <!--BOOK A TABLE SECTION-->
+   <section id="Bookatable">
+       <div id="bookcontainer">
+            <div class="booksection">
+                <div class="emoji">
+                    <header>Book a table</header>
+                </div>
+                <div>
+                    <form id="schedule" validate name="bookform">
+                        <label for="name" class="formdata">
+                            <input type="text" name="name" id="NAMES" placeholder="your name">
+                        </label>
+                        <label for="Phone" class="formdata">
+                            <input type="number" name="Phone" id="Phone" placeholder="Phone Number">
+                        </label>
+                        <label for="mail" class="formdata">
+                            <input type="email" name="mail" id="mail" placeholder="Your email">
+                        </label>
+                        <select id="data" class="formdata">
+                            <option disabled selected value>How many people?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <label for="date"class="formdata">
+                            <input type="datetime-local" name="date" id="date" min="2022-01-01" max="2200-01-01">
+                        </label>
+                        <button onclick="validate">
+                            Book now
+                        </button>
+                    </form>
+                </div>
+            </div>
+       </div>
+   </section>
+
+   <!--CONTACT US-->
+   <section id="CONTACTUUS">
+    <div id="contact">
+        <div class="contact">
+            <div class="contactus">
+                <p>
+                    You can reach us via:
+                    <p class="iconlist">
+                        <!--Facebook-->
+                        <i class="fab fa-facebook-f fa-spin"></i>
+                        <!--instagram-->
+                        <i class="fab fa-instagram fa-spin"></i>
+                        <!--Twitter-->
+                        <i class="fab fa-twitter fa-spin"></i>
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div id="hourscontainer">
+            <div class="shape">
+                <div class="hours">
+                   <p>
+                    <span>OPENING HOURS</span>
+                        <p>
+                        Mon-Fri 8:00-22:00
+                        Sat-Sun 9:00-22:00
+                        </p>
+                   </p>
+                </div>
+            </div>
+        </div>
+        <!--form-->
+        <div id="form">
+            <div class="form">
+                <label for="name">
+                    <input type="text" id="name" name="name" placeholder="Your Name...">
+                </label>
+
+                <label for="email">
+                     <input type="email" name="email" id="email" placeholder="Your Email...">
+                </label>
+
+                <label for="message">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+                </label>
+                <input type="button" value="SUBMIT">
+            </div>
+        </div>
+        <p>
+            copyright @sandra
+        </p>
+    </div>
+   </section>
+</body>
+</html>
+
+

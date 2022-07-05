@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --color1: #831400;
+    --color2:#D84205;
+    --color3:#D08A4F;
+    --color4:#FF7726;
+    --color5:#FFC274;
+    --font-familys:'Roboto', sans-serif;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+/*NAVIGATION BAR*/
+.containers{
+    padding-left: 700px;
+}
+nav{
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+li{
+    float: left;
+    padding: 25px 0;
+}
+li a{
+    padding: 0px 40px;
+    height: max-content;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color5);
+    opacity: .8;
+    height: 25px;
+}
+li a:hover:not(.active){
+    color:#ffffff;
+}
+/*.active, .links:hover{
+background-color: red;
+}*/
+
+/*HOME*/
+#Home{
+    width: 100vw;
+    height: 100vh;
+}
+.welcome-bcg > img{
+    width: 100vw;
+    height: 100vh;
+}
+.welcome-txt{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 120px;
+    color: #fff;
+    -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+/*ABOUT PAGE*/
+#ABOUT{
+    padding: none;
+    margin: none;
+}
+.small-txt{
+    position: absolute;
+    top: 15rem;
+    left: 20px;
+    width: 500px;
+}
+.small-txt h3{
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+.small-txt p{
+    font-size: 20px;
+    font-family: var(--font-familys);
+}
+/* BOOK A TABLE */
+#Bookatable{
+    background-image: url("../photos/book1.jpg");
+    background-size: cover;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding: 1em 1em 2em 1em;
+}
+#bookcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emoji{
+    padding: 0.8em;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1em;
+    word-spacing: 0.2em;
+    font-family: 'Dancing Script', cursive;
+}
+#schedule{
+    display: flex;
+    flex-direction: column;
+}
+.formdata{
+    padding: 0.5em;
+}
+select, input{
+    padding: 0.5em;
+    width: 35em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-transform: capitalize;
+    border-radius: 0.3em;
+    border: 1px solid black;
+}
+#data{
+    margin: 0.5em;
+    
+}
+button{
+    padding: 0.5em;
+    width: 15em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-transform: capitalize; 
+    margin: 0.5em;
+    border-radius: 0.9em;
+    background-color: #FFD700;
+}
+/*
+how to remove the icon when using text as input
+*/
+
+/*CONTACT US*/
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   background-color: var(--color3);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+}
+.contactus{
+    font-size: 20px;
+}
+.fab{
+    font-size: 32px;
+    padding: 5px;
+}
+#hourscontainer{
+    padding-top: 50px;
+}
+.hours{
+    width: 200px;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 28px;
+    
+}
+.shape{
+    border-radius: 45%;
+    width: 250px;
+    height: 110px;
+    padding: 15px;
+    background: #fff;
+    border: 3px solid var(--color2);
+    color: #000;
+    text-align: center;
+    background-color: var(--color5);
+}
+.form{
+    padding: 5px;
+    margin: 5px;
+}
+.input{
+    padding: 5px;
+    font-family: var(--font-familys);
+}
+#name, #email, #message{
+    width: 380px; 
+    background-color: var(--color5);
+    color: #000;
+}
+input[type=button]{
+    width: 100px;
+    padding: 5px;
+    font-family: var(--font-familys);
+    margin-top: 5px;
+    background-color: var(--color2);
+    color: #000;
+    font-weight: 650;
+    font-size: 18px;
+}
+textarea, input[type=email]{
+    margin-top: 10px;
+}
+
