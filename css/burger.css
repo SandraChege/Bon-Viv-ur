@@ -63,7 +63,7 @@ li a{
     font-size: 25px;
     color: var(--color5);
     opacity: .8;
-    height: 20px;
+    
 }
 li a:hover:not(.active){
     color:#ffffff;
